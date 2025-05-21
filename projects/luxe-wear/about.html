@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - LuxeWear</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="icon" href="favi.jpg" type="image/x-icon">
+</head>
+<body>
+  <header>
+   <header>
+  <div class="container nav">
+    <div class="logo">Luxewear</div>
+    
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+  
+
+<section class="about-section" data-aos="fade-up">
+  <div class="container">
+    <h2>About LuxeWear</h2>
+    <p>LuxeWear is a premium fashion brand delivering elegance, confidence, and timeless style to modern individuals across the globe.</p>
+    <p>Our designs are inspired by the bold and refined. With every stitch and silhouette, LuxeWear empowers you to express your identity with class and comfort.</p>
+    <p>Founded with passion and vision, LuxeWear continues to redefine modern fashion, one beautiful piece at a time.</p>
+  </div>
+</section>
+
+<section class="contact-info" data-aos="fade-up">
+  <div class="container">
+    <h3>Contact LuxeWear</h3>
+    <p>We'd love to hear from you. Reach out via any of the options below:</p>
+
+    <div class="contact-details">
+      <div class="contact-item">
+        <strong>Address:</strong>
+        <p>23 Elegance Street, Lekki Phase 1, Lagos, Nigeria</p>
+      </div>
+
+      <div class="contact-item">
+        <strong>Phone:</strong>
+        <p><a href="tel:+2348012345678">+234 801 234 5678</a></p>
+      </div>
+
+      <div class="contact-item">
+        <strong>Email:</strong>
+        <p><a href="mailto:info@luxewear.com">info@luxewear.com</a></p>
+      </div>
+
+      <div class="contact-item">
+        <strong>Business Hours:</strong>
+        <p>Mon – Fri: 9:00 AM – 6:00 PM<br>Saturday: 10:00 AM – 4:00 PM</p>
+      </div>
+    </div>
+  </div><br><br>
+  <section class="map-section" data-aos="fade-up">
+  <div class="container">
+    <h3>Find Us on the Map</h3>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps?q=Lekki+Phase+1+Lagos+Nigeria&output=embed" 
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+  <section class="social-section" data-aos="fade-up">
+  <div class="container">
+    <h3>Follow Us</h3>
+    <div class="social-links">
+      <a href="https://instagram.com/luxewear" target="_blank">Instagram</a>
+      <a href="https://facebook.com/luxewear" target="_blank">Facebook</a>
+      <a href="https://twitter.com/luxewear" target="_blank">Twitter (X)</a>
+      <a href="https://pinterest.com/luxewear" target="_blank">Pinterest</a>
+    </div>
+  </div>
+</section>
+</section>
+</section>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/234XXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp" />
+</a>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 LuxeWear. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true // animation happens only once on scroll
+  });
+</script>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('open');
+  });
+</script>
+</body>
+</html>

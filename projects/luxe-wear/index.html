@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuxeWear - Fashion Redefined</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="icon" href="favi.jpg" type="image/x-icon">
+</head>
+<body>
+  <header>
+   <header>
+  <div class="container nav">
+    <div class="logo">Luxewear</div>
+    
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+  <section class="hero" data-aos="fade-in">
+    <div class="hero-text">
+      <h2>Elevate Your Style</h2>
+      <p>Discover premium fashion for the modern you.</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="collections" data-aos="fade-up">
+  <h2>Featured Collections</h2>
+  <div class="collection-grid">
+    <div class="card">
+      <img src="images/street.jpg" alt="Fashion 1">
+      <h3>Street Style</h3>
+      <a href="collections.html" class="card-btn">Shop Now</a>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <img src="images/elegant.jpg" alt="Fashion 2">
+      <h3>Elegant Wear</h3>
+      <a href="collections.html" class="card-btn">Shop Now</a>
+    </div>
+    <div class="card">
+      <img src="images/urban.webp" alt="Fashion 3">
+      <h3>Urban Vibes</h3>
+      <a href="collections.html" class="card-btn">Shop Now</a>
+    </div>
+  </div><br>
+
+  <div class="collection-btn">
+    <a href="collections.html" class="btn">View All Collections</a>
+  </div>
+</section>
+
+  <section class="about" data-aos="fade-right">
+    <div class="container">
+      <h2>About LuxeWear</h2>
+      <p>We blend fashion and culture to deliver timeless styles for every season. Each piece is designed to make a statement.</p>
+    </div>
+  </section>
+
+  <section class="newsletter" data-aos="fade-in">
+    <h2>Stay in the Loop</h2>
+    <p>Subscribe to get latest drops and exclusive offers.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/234XXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp" />
+  </a>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 LuxeWear. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true // animation happens only once on scroll
+  });
+</script>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('open');
+  });
+</script>
+</body>
+</html>

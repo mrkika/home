@@ -1,0 +1,561 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive Body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/bga.webp'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Full-width Main Container */
+.main-container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+header .logo img {
+    max-width: 200px;
+    width: 100%;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #bb3434;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+/* Add styles for the hamburger button */
+#hamburger {
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    font-size: 30px;
+    color: #bb3434;
+}
+
+/* Show the hamburger menu on mobile devices */
+@media screen and (max-width: 768px) {
+    #hamburger {
+        display: block; /* Show the hamburger button on mobile */
+    }
+
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Stack the menu items vertically */
+        width: 100%; /* Ensure it takes the full width */
+    }
+
+    nav ul.show {
+        display: flex; /* Show the menu when the "show" class is added */
+    }
+
+    @media screen and (max-width: 768px) {
+        nav ul {
+            display: block;  /* Ensure menu items are displayed */
+        }
+    
+        nav ul.active {
+            display: block; /* or flex if needed */
+        }
+    }
+    
+}
+
+
+/* Slider */
+.slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-images {
+    display: flex;
+    width: 300%;
+    transition: transform 1s ease-in-out;
+}
+
+.slider-images img {
+    width: 34%;
+    height: 150%;
+    object-fit: cover;
+}
+
+
+.logo-section {
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Vertically centers the text and logo */
+    justify-content: center; /* Centers the text and logo horizontally */
+    gap: 1px; /* Adds space between the text and logo */
+}
+
+.welcome-text {
+    font-size: 1.0rem; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold */
+    color: #ee0000; /* Set text color */
+}
+
+.logo {
+    height: 50px; /* Adjust logo size */
+    width: auto; /* Maintain aspect ratio */
+}
+
+
+/* Featured Section */
+.featured {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.featured p {
+    font-size: 18px;
+    color: #050000;
+}
+
+/* Auction Section */
+.auctions {
+    padding: 20px;
+    background-color: #fffdfd;
+}
+
+.upcoming-auctions-title h2 {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.auction-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.auction {
+    flex: 1 1 calc(33.333% - 40px); /* Responsive columns */
+    max-width: calc(33.333% - 40px);
+    background-color: #fff;
+    border: 1px solid #ccc; /* Adds border lines around the auction containers */
+    color: #000; /* Changes text color to black */
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.auction img {
+    width: 100%;
+    height: auto; /* Adjusts the height based on the aspect ratio of the image */
+    object-fit: contain; /* Ensures the full image is displayed */
+}
+
+
+.auction:hover {
+    transform: scale(1.05);
+}
+
+.auction-details h3,
+.auction-details p {
+    margin: 10px 0;
+    color: #000; /* Ensures text in auction details is black */
+}
+
+.auction button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Modal Background */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-title {
+    color: #d9534f; /* Red color */
+    font-weight: bold; /* Optional: Make it bold */
+}
+
+/* Modal Content */
+.modal-content {
+    background: #000000;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content a {
+    color: #007bff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.modal-content a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Disable Background Interaction */
+#content {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .modal-content {
+        font-size: 14px;
+    }
+}
+
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.faq-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq-section {
+    margin-bottom: 20px;
+}
+
+.faq-section h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    background-color: #f1f1f1;
+    color: red;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+}
+
+.faq-toggle {
+    display: none;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    color: black;
+    border-radius: 5px;
+}
+
+.plus-sign {
+    font-weight: bold;
+}
+
+/* When checkbox is checked, show the answer and change the plus sign */
+.faq-toggle:checked + .faq-answer {
+    display: block;
+}
+
+.faq-toggle:checked + .faq-answer + .faq-question .plus-sign {
+    content: "−"; /* Change plus to minus */
+}
+
+/* General Layout Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.product-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Separate Image and Info Containers */
+.image-container, .info-container {
+    margin-bottom: 40px;
+}
+
+/* Image Slider Styling */
+.image-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ensures image maintains consistency */
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the whole image is visible without cutting off */
+    border-radius: 8px;
+}
+
+/* Fade-In Animation for Images */
+@keyframes fade-in {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    50% { opacity: 1; }
+    60% { opacity: 0; }
+}
+
+.image-slider .slide:nth-child(1) {
+    animation: fade-in 30s infinite;
+    animation-delay: 0s;
+}
+
+.image-slider .slide:nth-child(2) {
+    animation: fade-in 30s infinite;
+    animation-delay: 10s;
+}
+
+.image-slider .slide:nth-child(3) {
+    animation: fade-in 30s infinite;
+    animation-delay: 20s;
+}
+
+/* Product Info Styling */
+.info-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-info h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-info .product-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.product-info h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Table Styles */
+.product-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-info th, .product-info td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.product-info th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333; /* Ensure text is visible */
+}
+
+.product-info td {
+    font-weight: normal;
+    color: #333; /* Ensure text is visible */
+}
+
+/* SCAM ALERT Section */
+.product-info .scam-alert p,
+.product-info p {
+    color: #333;
+}
+
+.product-info .scam-alert strong {
+    color: #ff0000;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .product-details {
+        padding: 10px;
+    }
+
+    .image-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product-info {
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: -20px;
+    text-align: center;
+}
+
+.footer-logo-img {
+    max-width: 300px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+
+footer .footer-links ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .contact-details p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+        display: none; /* Hidden by default, toggle with JavaScript */
+    }
+
+    .slider {
+        height: 40vh;
+    }
+
+    .auction {
+        flex: 1 1 calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .featured p {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

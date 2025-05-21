@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO DEALER WEBSITE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favi.png">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo3.png" alt="Logo">
+        </div>
+
+        <!-- Hamburger Button for Mobile -->
+        <div id="hamburger">&#9776;</div>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul id="menu">
+                <li><a href="https://lynneliquidationsgroup.co.za">HOME</a></li>
+            <li><a href="https://lynneliquidationsgroup.co.za/auctions.html">AUCTIONS</a></li>
+            <li><a href="https://lynneliquidationsgroup.co.za/faqs.html">FAQS</a></li>
+            <li><a href="https://lynneliquidationsgroup.co.za/contact.html">CONTACT US</a></li>
+            <li><a href="https://lynneliquidationsgroup.co.za/terms-and-conditions.html">TERMS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <script>
+        // JavaScript for hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #000000;
+        }
+
+        /* Container for the form and contact info */
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            width: 90%;
+            max-width: 1200px;
+            background-color: transparent;
+        }
+
+        /* Contact form container */
+        .contact-form {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+            width: 45%; /* Adjust width to make space for the other column */
+            box-sizing: border-box;
+            text-align: center;
+            margin-right: 5%;
+        }
+
+        /* Title styling */
+        .contact-form h2 {
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        /* Paragraph styling */
+        .contact-form p {
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 25px;
+        }
+
+        /* Label styling */
+        .contact-form label {
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 5px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        /* Input fields styling */
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        /* Textarea styling */
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        /* Submit button styling */
+        .contact-form button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Button hover effect */
+        .contact-form button:hover {
+            background-color: #b30000;
+        }
+
+        /* Contact Info Container */
+        .contact-info {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+            width: 45%; /* Adjust width to make space for the form */
+            box-sizing: border-box;
+            color: #ffffff;
+        }
+
+        .contact-info h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Google Map Container */
+        .map-container {
+            margin-top: 20px;
+            width: 100%;
+            height: 300px;
+        }
+
+        /* Add responsiveness */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-form, .contact-info {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .contact-info {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <p>Do you want to buy a vehicle? <br>Or have a question about one of our auctions? We would be happy to hear from you. Just fill out the form and we will get back to you as soon as we can.</p>
+            <p>If you would rather not use the form, you can email us directly here: <strong>sales@lynneliquidationsgroup.co.za</strong></p>
+
+            <!-- Form Submission to Formspree -->
+            <form action="https://formspree.io/f/myzzoqab" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="_replyto" required>
+                <br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Address:</strong> 31 Van Eck St, Chamdor, Krugersdorp, 1754, South Africa</p>
+            <p><strong>Phone:</strong> +27 11 123 4567</p>
+            <p><strong>Email:</strong> <a href="mailto:sales@lynneliquidationsgroup.co.za">sales@lynneliquidationsgroup.co.za</a></p>
+            <div class="map-container">
+                <!-- Google Map Embed for your address -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.4472762394344!2d27.80064017541341!3d-26.1495589771103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9598973d6a2465%3A0xaa6711cecb96aed4!2s31%20Van%20Eck%20St%2C%20Chamdor%2C%20Krugersdorp%2C%201754%2C%20South%20Africa!5e0!3m2!1sen!2som!4v1736840259212!5m2!1sen!2som" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+ <!-- Footer Section -->
+ <footer>
+    <div class="footer-logo"><br>
+        <img src="assets/logo.png" alt="Logo" class="footer-logo-img"><br><br>
+    </div>
+    
+    <div class="footer-links">
+        <ul>
+            <li><a href="https://lynneliquidationsgroup.co.za">HOME</a></li>
+            <li><a href="https://lynneliquidationsgroup.co.za/auctions.html">AUCTIONS</a></li>
+            <li><a href="https://lynneliquidationsgroup.co.za/faqs.html">FAQS</a></li>
+            <li><a href="https://lynneliquidationsgroup.co.za/contact.html">CONTACT US</a></li>
+            <li><a href="https://lynneliquidationsgroup.co.za/terms-and-conditions.html">TERMS</a></li>
+        </ul>
+    </div>
+    <div class="contact-details">
+        <p><strong>Contact Us</strong></p><br>
+        <p><i class="fas fa-phone-alt"></i> Tel: 0123 456 7890</p>
+        <p><i class="fas fa-envelope"></i> Email: sales@lynneliquidationsgroup.co.za</p>
+        <p><i class="fas fa-map-marker-alt"></i> Head Office: 123 My Address</p><br><br>
+    </div>
+    <div class="subscribe">
+        <input type="email" placeholder="Subscribe to our newsletter">
+        <button type="submit">Subscribe</button><br><br><br>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 AUTO DEALER WEBSITE. All Rights Reserved.</p><br><br>
+    </div>
+</footer>
+
+<script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>

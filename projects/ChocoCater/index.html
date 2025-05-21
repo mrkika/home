@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChocoCater - Professional Catering Services</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="ChocoCater Logo">
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1>Delicious Catering for Every Occasion</h1>
+      <p>Experience the finest culinary delights with our professional catering services.</p>
+      <a href="#contact" class="btn">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a team of passionate chefs dedicated to creating unforgettable dining experiences. Our mission is to deliver exceptional food and service for every event.</p>
+      <img src="images/culi.jpg" alt="About Us Image">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <i class="fas fa-utensils"></i>
+          <h3>Weddings</h3>
+          <p>Elegant and customized menus for your special day.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-birthday-cake"></i>
+          <h3>Birthdays</h3>
+          <p>Fun and delicious catering for all ages.</p>
+        </div>
+        <div class="service-item">
+          <i class="fas fa-briefcase"></i>
+          <h3>Corporate Events</h3>
+          <p>Professional catering for business meetings and events.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/menu1.jpg" alt="Menu Item 1">
+          <h3>Appetizers</h3>
+          <p>A selection of gourmet starters to tantalize your taste buds.</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/menu2.jpg" alt="Menu Item 2">
+          <h3>Main Courses</h3>
+          <p>Hearty and flavorful dishes to satisfy every palate.</p>
+        </div>
+        <div class="menu-item">
+          <img src="images/menu3.jpg" alt="Menu Item 3">
+          <h3>Desserts</h3>
+          <p>Decadent sweets to end your meal on a high note.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-item">
+          <p>"The food was absolutely amazing! Everyone at our wedding loved it."</p>
+          <h3>- Sarah & John</h3>
+        </div>
+        <div class="testimonial-item">
+          <p>"Professional service and delicious food. Highly recommend!"</p>
+          <h3>- Mark T.</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog">
+    <div class="container">
+      <h2>Latest Blog Posts</h2>
+      <div class="blog-grid">
+        <div class="blog-item">
+          <img src="images/cater.jpg" alt="Blog Post 1">
+          <h3>Top Catering Trends for 2025</h3>
+          <p class="meta">January 15, 2025 | By Chef Anna</p>
+          <p>Discover the latest trends in the catering industry and how we incorporate them into our services.</p>
+        </div>
+        <div class="blog-item">
+          <img src="images/dine.jpg" alt="Blog Post 2">
+          <h3>How to Plan the Perfect Menu</h3>
+          <p class="meta">February 1, 2025 | By Chef Michael</p>
+          <p>Tips and tricks for creating a menu that will impress your guests.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us on WhatsApp Today</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ChocoCater. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/27680310683" target="_blank" class="whatsapp-button" title="Chat with us on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<!-- Replace 1234567890 with your WhatsApp number in international format -->
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

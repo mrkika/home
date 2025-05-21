@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polo Hatch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="image/favi.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="https://vanzylliquidations.co.za/">
+                    <img src="image/van-logo2.PNG" alt="Your Logo">
+                </a>
+            </div><br>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="https://vanzylliquidations.co.za/">Home</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/cars.html">Cars on Auction</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/faq.html">FAQs</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/contact.html">Contact</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/register.html">Register</a></li>
+                </ul>
+                <button class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner-container">
+        <img src="image/auto.jpg" alt="Banner Image" class="responsive-banner">
+        <div class="banner-text">
+        </div>
+    </div>
+    
+    <div class="center-text-box">
+        <h2 class="button-style">2020 Volkswagen Polo Hatch 1.0TSI Trendline Details</h2>
+    </div>
+
+    <style>
+        /* Carousel container */
+        .carousel-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        /* Overlay text on carousel */
+        .carousel-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Car details section */
+        .car-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+        }
+
+        .car-info {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        .car-info h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .car-info p {
+            font-size: 1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .car-info span {
+            color: gold;
+            font-weight: bold;
+        }
+
+        /* Additional info section */
+        .additional-info {
+            flex: 1;
+            padding: 20px;
+            background-color: #af9503;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-info h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 80%;
+            margin: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .modal-navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .modal-nav-button {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: gold;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        .modal-nav-button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Carousel for car images -->
+    <div class="carousel-container">
+        <div class="carousel-images">
+            <div class="carousel-text">2020 Volkswagen Polo Hatch 1.0TSI Trendline</div>
+            <img src="image/cars/polo1.jpeg" alt="Car 1" class="carousel-image" data-index="0">
+            <img src="image/cars/polo2.jpeg" alt="Car 2" class="carousel-image" data-index="1">
+            <img src="image/cars/polo3.jpeg" alt="Car 3" class="carousel-image" data-index="2">
+            <img src="image/cars/polo4.jpeg" alt="Car 4" class="carousel-image" data-index="3">
+            <img src="image/cars/polo5.jpeg" alt="Car 5" class="carousel-image" data-index="4">
+            <img src="image/cars/polo6.jpeg" alt="Car 6" class="carousel-image" data-index="5">
+            <img src="image/cars/polo7.jpeg" alt="Car 7" class="carousel-image" data-index="6">
+            <img src="image/cars/polo8.jpeg" alt="Car 8" class="carousel-image" data-index="7">
+            <img src="image/cars/polo9.jpeg" alt="Car 9" class="carousel-image" data-index="8">
+            <img src="image/cars/polo10.jpeg" alt="Car 10" class="carousel-image" data-index="9">
+            <img src="image/cars/polo11.jpeg" alt="Car 11" class="carousel-image" data-index="10">
+            <img src="image/cars/polo12.jpeg" alt="Car 12" class="carousel-image" data-index="11">
+            <img src="image/cars/polo13.jpeg" alt="Car 13" class="carousel-image" data-index="12">
+            <img src="image/cars/polo14.jpeg" alt="Car 14" class="carousel-image" data-index="13">
+            <img src="image/cars/polo15.jpeg" alt="Car 15" class="carousel-image" data-index="14">
+        </div>
+    </div>
+
+    <!-- Car details section -->
+    <div class="car-details">
+        <!-- Car Info Section -->
+        <div class="car-info">
+            <h1>2020 Volkswagen Polo Hatch 1.0TSI Trendline</h1>
+            <p><strong>Pre-Auction Price:</strong> <span>R80,000</span></p>
+            <p><strong>Transmission:</strong> Automatic</p>
+            <p><strong>Mileage:</strong> 60 000 Km</p>
+            <p><strong>Lot No:</strong> 932856</p>
+            <button style="background-color: gold; padding: 10px; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer;">
+                CONTACT US TODAY 021 516 0139
+            </button>
+        </div>
+
+        <!-- Additional Info Section -->
+        <div class="additional-info">
+            <h3>Additional Information</h3>
+            <p><strong>Volkswagen Polo Hatch 1.0 TSI Trendline blends style and efficiency. With a peppy 1.0-liter turbocharged engine, it delivers a dynamic driving experience. Practical features and German engineering make it a standout choice for those seeking a reliable and spirited ride..</strong></p>
+            
+        </div>
+    </div>
+
+    <!-- Modal for full-screen image view -->
+    <div id="carModal" class="modal">
+        <div class="modal-navigation">
+            <button class="modal-nav-button prev-modal">❮</button>
+            <img class="modal-content" id="modalImg" src="">
+            <button class="modal-nav-button next-modal">❯</button>
+        </div>
+    </div>
+
+
+    <div class="banner-container">
+        <img src="image/banner.jpg" alt="Banner Image" class="responsive-banner">
+        <div class="banner-text">
+            <h2>Van Zyl Liquidations</h2>
+            <p>Your Trusted Auctioneers</p>
+        </div>
+    </div>        
+    
+
+    <div class="center-text-box">
+        <h2 class="button-style">Contact Us Today!</h2>
+    </div>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="https://wa.me/27833765712?text=Hello%2C%20I%20would%20like%20to%20inquire%20about..." method="get" target="_blank">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li><strong>Address:</strong> 22 Abattor Road, Worcester, Western Cape</li>
+                    <li><strong>Tel:</strong> 021 516 0139</li>
+                    <li><strong>Email:</strong> sales@vanzylliquidations.co.za</li>
+                </ul>
+                <h3>Find Us On The Map</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3343.5225771026658!2d19.469572075698654!3d-33.633944973317405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcd78acdd3c580b%3A0x3e85a66894beecd0!2s22%20Abattoir%20St%2C%20Worcester%2C%206849%2C%20South%20Africa!5e1!3m2!1sen!2som!4v1740663584372!5m2!1sen!2som" width="280" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="center-text-box">
+        <h2 class="button-style">SA #1 Auctioneers</h2>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <a href="https://vanzylliquidations.co.za/">
+                    <img src="image/van-logo2.PNG" alt="Your Logo">
+                </a>
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://vanzylliquidations.co.za/">Home</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/cars.html">Cars on Auction</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/faq.html">FAQs</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/contact.html">Contact</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/register.html">Register</a></li>
+                </ul>
+            </div>
+    
+            <!-- Newsletter Section -->
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="your_newsletter_submission_url" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="footer-copyright">
+            <p>&copy; 2025 Van Zyl Liquidations. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Carousel variables
+        const carouselImages = document.querySelector('.carousel-images');
+        const images = document.querySelectorAll('.carousel-image');
+        const totalImages = images.length;
+        let currentIndex = 0;
+
+        // Automatic sliding function
+        function slideImages() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+        setInterval(slideImages, 3000); // Slide every 3 seconds
+
+        // Open full-screen image on click
+        const modal = document.getElementById('carModal');
+        const modalImg = document.getElementById('modalImg');
+        const prevModal = document.querySelector('.prev-modal');
+        const nextModal = document.querySelector('.next-modal');
+
+        // Click event for opening the modal
+        images.forEach((image, index) => {
+            image.addEventListener('click', () => {
+                modal.style.display = 'block';
+                modalImg.src = image.src;
+                currentIndex = index;
+            });
+        });
+
+        // Close modal when clicking outside of the image
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Modal navigation (prev/next)
+        prevModal.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            modalImg.src = images[currentIndex].src;
+        });
+
+        nextModal.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalImages;
+            modalImg.src = images[currentIndex].src;
+        });
+    </script>
+    
+
+    <a href="https://wa.me/27833765712" target="_blank" id="whatsapp-button">
+        <img src="image/whatsapp.png" alt="WhatsApp" />
+    </a>
+    
+</body>
+</html>

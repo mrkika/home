@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header with Logo -->
+    <header>
+        <div class="logo-container">
+            <img src="images/logo3.png" alt="Logo" class="logo">
+        </div>
+    </header>
+
+    <!-- Video Background -->
+    <div class="video-container">
+        <video autoplay muted loop id="bg-video">
+            <source src="images/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Enter Button -->
+    <div class="enter-button-container">
+        <button id="enter-btn" onclick="goToHomepage()">Tap To Enter</button>
+    </div>
+
+    <!-- Vertical Image Widget -->
+    <div class="image-widget">
+        <a href="profile.html">
+            <img src="images/vvv.png" alt="Vertical Image">
+        </a>
+    </div>
+
+    <script>
+        // Redirect to homepage when Enter button is clicked
+        function goToHomepage() {
+            window.location.href = 'home.html'; // Replace with your homepage link
+        }
+    </script>
+
+</body>
+</html>

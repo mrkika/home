@@ -1,0 +1,165 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
+    z-index: 1; /* Ensure it stays on top */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+/* Profile Section Styling */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 120px; /* Make room for the fixed header */
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    max-width: 600px;
+    width: 100%;
+}
+
+.profile-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-info .about {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.skills {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Styling the Contact Section */
+.contact-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.whatsapp-button img {
+    width: 40px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .profile-photo img {
+        width: 120px;
+        height: 120px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-info {
+        width: 90%;
+        text-align: center;
+    }
+
+    .profile-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .profile-info .about {
+        font-size: 1rem;
+    }
+
+    .skills li {
+        font-size: 0.9rem;
+    }
+
+    .whatsapp-button {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-info h1 {
+        font-size: 1.3rem;
+    }
+
+    .profile-info .about {
+        font-size: 0.9rem;
+    }
+
+    .skills li {
+        font-size: 0.8rem;
+    }
+
+    .whatsapp-button {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scale X Studios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }body {
+  display: flex;
+  height: 100vh;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #1f1f1f;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar h2 {
+  color: #00d1b2;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.sidebar a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover, .sidebar a.active {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.main {
+  margin-left: 220px;
+  padding: 2rem;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.intro img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.intro .details {
+  max-width: 600px;
+}
+
+.intro h1 {
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  margin: 2rem 0 1rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #00d1b2;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>MyPortfolio</h2>
+    <a href="#" class="active">Home</a>
+    <a href="#webapps">Web Apps</a>
+    <a href="#templates">Web Templates</a>
+    <a href="#python">Python Projects</a>
+    <a href="#contact">Contact</a>
+  </div>  <div class="main">
+    <section class="intro">
+      <img src="img/profile.png" alt="Your Photo">
+      <div class="details">
+        <h1>Hello, I'm Collins Knight</h1>
+        <p>A passionate developer skilled in building modern web apps and powerful Python tools.</p>
+        <p>Proficient in Jupyter Notebook, and I apply my Digital Skills to real-world projects like Data Analysis and Chatbot Development, focusing on practical solutions for African businesses.</p>
+      </div>
+    </section><section class="skills">
+  <h2 class="section-title">Skills & Tools</h2>
+  <p>- HTML, CSS, JavaScript, Python, Git, Responsive Design, Bootstrap, Tailwind CSS, VS Code.</p>
+  <p>- Conducted trend analysis and generated visually appealing PDF reports using Python and Jupyter Notebook, including actionable insights for improvement.</p>
+  <p>- Utilized advanced data science techniques learned during a completed Data Science in Python course.</p>
+  <p>- Built a chatbot for Nigerian fashion brand ClickersCollection, utilizing Python to automate customer inquiries and enhance user experience.</p>
+  <p>- Applied computer science principles from HND coursework to develop efficient and user-friendly systems.</p>
+  <p>- Worked on real-life data analysis projects focused on African contexts, leveraging advanced visualization and reporting techniques.</p>
+  <p>- Integrated real-world problem-solving skills acquired through education and professional training.</p>
+</section>
+
+<section class="projects">
+    <h2 class="section-title">Explore My Work</h2>
+    <div class="cards">
+      <div class="card">
+        <h3><a href="web-apps.html">Web Apps</a></h3>
+        <p>Interactive tools and mini-apps created with HTML, CSS, JS.</p>
+      </div>
+      <div class="card">
+        <h3><a href="web-templates.html">Web Templates</a></h3>
+        <p>Beautiful layouts ready to be used and customized.</p>
+      </div>
+      <div class="card">
+        <h3><a href="python-projects.html">Python Projects</a></h3>
+        <p>Scripts, games and useful CLI tools built with Python.</p>
+      </div>
+    </div>
+  </section>  
+
+  </div>
+</body>
+</html>

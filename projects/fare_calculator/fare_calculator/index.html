@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Transport Fare Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Transport Fare Calculator</h1>
+
+    <form id="fareForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="distance">Distance (in KM):</label>
+      <input type="number" id="distance" required>
+
+      <label for="loyalty">Loyalty Member?</label>
+      <select id="loyalty">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+      </select>
+
+      <button type="submit">Calculate Fare</button>
+    </form>
+
+    <div class="result" id="resultBox"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

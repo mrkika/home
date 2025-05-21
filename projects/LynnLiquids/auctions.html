@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO DEALER WEBSITE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favi.png">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo3.png" alt="Logo">
+        </div>
+
+        <!-- Hamburger Button for Mobile -->
+        <div id="hamburger">&#9776;</div>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul id="menu">
+              <li><a href="https://lynneliquidationsgroup.co.za">HOME</a></li>
+              <li><a href="https://lynneliquidationsgroup.co.za/auctions.html">AUCTIONS</a></li>
+              <li><a href="https://lynneliquidationsgroup.co.za/faqs.html">FAQS</a></li>
+              <li><a href="https://lynneliquidationsgroup.co.za/contact.html">CONTACT US</a></li>
+              <li><a href="https://lynneliquidationsgroup.co.za/terms-and-conditions.html">TERMS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <script>
+        // JavaScript for hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+
+ <!-- Auctions Section -->
+ <section class="auctions" id="auction">
+    <div class="upcoming-auctions-title">
+        <h2>Upcoming Auctions</h2><br>
+    </div>
+    
+    <div class="auction-row">
+        <div class="auction">
+            <img src="assets/1.png" alt="Auction 1">
+            <div class="auction-details">
+                <h3>MULTI-BANK ONLINE AUCTION</h3>
+                <p><i class="fa fa-calendar"></i> Auction Date: Mon - Fri @ 11:00 SAST</p>
+                <p><i class="fa fa-calendar"></i> Viewing Date: Mon - Fri @ 09:00 - 16:00 SAST</p>
+                <p><i class="fa fa-map-marker"></i> Venue: 123 My Address</p>
+                <a href="https://lynneliquidationsgroup.co.za/multibank.html">
+                    <button>View More Information</button>
+                </a>
+            </div>
+        </div>
+        <div class="auction">
+            <img src="assets/2.png" alt="Auction 2">
+            <div class="auction-details">
+                <h3>ABSA BOKSBURG REPOSSESSED VEHICLES</h3>
+                <p><i class="fa fa-calendar"></i> Auction Date: Mon - Fri @ 11:00 SAST</p>
+                <p><i class="fa fa-calendar"></i> Viewing Date: Mon - Fri @ 08:00 - 16:00 SAST</p>
+                <p><i class="fa fa-map-marker"></i> Venue: 123 My Address</p>
+                <a href="https://lynneliquidationsgroup.co.za/absarepo.html">
+                    <button>View More Information</button>
+                </a>
+            </div>
+        </div>
+        <div class="auction">
+            <img src="assets/3.png" alt="Auction 3">
+            <div class="auction-details">
+                <h3>ABSA CORPORATE DE-FLEET DISPOSAL</h3>
+                <p><i class="fa fa-calendar"></i> Auction Date: Mon - Fri @ 11:00 SAST</p>
+                <p><i class="fa fa-calendar"></i> Viewing Date: Mon - Fri @ 08:00 - 16:00 SAST</p>
+                <p><i class="fa fa-map-marker"></i> Venue: 123 My Address</p>
+                <a href="https://lynneliquidationsgroup.co.za/defleet.html">
+                    <button>View More Information</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-logo"><br>
+        <img src="assets/logo.png" alt="Logo" class="footer-logo-img"><br><br>
+    </div>
+    
+    <div class="footer-links">
+        <ul>
+          <li><a href="https://lynneliquidationsgroup.co.za">HOME</a></li>
+          <li><a href="https://lynneliquidationsgroup.co.za/auctions.html">AUCTIONS</a></li>
+          <li><a href="https://lynneliquidationsgroup.co.za/faqs.html">FAQS</a></li>
+          <li><a href="https://lynneliquidationsgroup.co.za/contact.html">CONTACT US</a></li>
+          <li><a href="https://lynneliquidationsgroup.co.za/terms-and-conditions.html">TERMS</a></li>
+        </ul>
+    </div>
+    <div class="contact-details">
+        <p><strong>Contact Us</strong></p><br>
+        <p><i class="fas fa-phone-alt"></i> Tel: 0123 456 7890</p>
+        <p><i class="fas fa-envelope"></i> Email: admin@mywebsite.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Head Office: 123 My Address</p><br><br>
+    </div>
+    <div class="subscribe">
+        <input type="email" placeholder="Subscribe to our newsletter">
+        <button type="submit">Subscribe</button><br><br><br>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 AUTO DEALER WEBSITE. All Rights Reserved.</p><br><br>
+    </div>
+</footer>
+
+<script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>

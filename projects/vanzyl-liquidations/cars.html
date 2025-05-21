@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="image/favi.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="https://vanzylliquidations.co.za/">
+                    <img src="image/van-logo2.PNG" alt="Your Logo">
+                </a>
+            </div><br>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="https://vanzylliquidations.co.za/">Home</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/cars.html">Cars on Auction</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/faq.html">FAQs</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/contact.html">Contact</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/register.html">Register</a></li>
+                </ul>
+                <button class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner-container">
+        <img src="image/auto.jpg" alt="Banner Image" class="responsive-banner">
+        <div class="banner-text">
+        </div>
+    </div>
+    
+    <div class="center-text-box">
+        <h2 class="button-style">Catalogue</h2>
+    </div>
+
+    <title>Featured Product Section</title>
+    <style>
+        /* Featured Product Section */
+        .featured-product {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            margin: 20px 0;
+        }
+
+        /* Carousel container */
+        .carousel-container {
+            position: relative;
+            width: 50%;
+            max-width: 400px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        /* Product Details */
+        .product-details {
+            flex: 1;
+        }
+
+        .product-details h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product-details p {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .product-details span {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: gold;
+        }
+
+        /* Modal for full-screen image view */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .modal-navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .modal-nav-button {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 50%;
+        }
+
+        .modal-nav-button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Featured Product Section -->
+    <div class="featured-product">
+        <!-- Carousel -->
+        <div class="carousel-container">
+            <div class="carousel-images">
+                <img src="image/cars/suzgrip1.jpeg" alt="Car 1" class="carousel-image" data-index="0">
+                <img src="image/cars/suzgrip2.jpeg" alt="Car 2" class="carousel-image" data-index="1">
+                <img src="image/cars/suzgrip.jpeg" alt="Car 3" class="carousel-image" data-index="2">
+                <img src="image/cars/suzgrip3.jpeg" alt="Car 4" class="carousel-image" data-index="3">
+                <img src="image/cars/suzgrip4.jpeg" alt="Car 5" class="carousel-image" data-index="4">
+                <img src="image/cars/suzgrip5.jpeg" alt="Car 6" class="carousel-image" data-index="5">
+                <img src="image/cars/suzgrip6.jpeg" alt="Car 7" class="carousel-image" data-index="6">
+                <img src="image/cars/suzgrip7.jpeg" alt="Car 8" class="carousel-image" data-index="7">
+                <img src="image/cars/suzgrip8.jpeg" alt="Car 9" class="carousel-image" data-index="8">
+                <img src="image/cars/suzgrip9.jpeg" alt="Car 10" class="carousel-image" data-index="9">
+                <img src="image/cars/suzgrip10.jpeg" alt="Car 11" class="carousel-image" data-index="10">
+                <img src="image/cars/suzgrip11.jpeg" alt="Car 12" class="carousel-image" data-index="11">
+                <img src="image/cars/suzgrip12.jpeg" alt="Car 13" class="carousel-image" data-index="12">
+                <img src="image/cars/suzgrip13.jpeg" alt="Car 14" class="carousel-image" data-index="13">
+                <img src="image/cars/suzgrip14.jpeg" alt="Car 15" class="carousel-image" data-index="14">
+                <img src="image/cars/suzgrip15.jpeg" alt="Car 16" class="carousel-image" data-index="15">
+                <img src="image/cars/suzgrip16.jpeg" alt="Car 17" class="carousel-image" data-index="16">
+                <img src="image/cars/suzgrip17.jpeg" alt="Car 18" class="carousel-image" data-index="17">
+                <img src="image/cars/suzgrip18.jpeg" alt="Car 19" class="carousel-image" data-index="18">
+                <img src="image/cars/suzgrip19.jpeg" alt="Car 20" class="carousel-image" data-index="19">
+                <img src="image/cars/suzgrip20.jpeg" alt="Car 21" class="carousel-image" data-index="20">
+                <img src="image/cars/suzgrip21.jpeg" alt="Car 22" class="carousel-image" data-index="21">
+                <img src="image/cars/suzgrip22.jpeg" alt="Car 23" class="carousel-image" data-index="22">
+                <img src="image/cars/suzgrip23.jpeg" alt="Car 24" class="carousel-image" data-index="23">
+                <img src="image/cars/suzgrip24.jpeg" alt="Car 25" class="carousel-image" data-index="24">
+                <img src="image/cars/suzgrip25.jpeg" alt="Car 26" class="carousel-image" data-index="25">
+                <img src="image/cars/suzgrip26.jpeg" alt="Car 27" class="carousel-image" data-index="26">
+            </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <h1>2023 Suzuki Jimny 1.5</h1>
+            <p><strong>Pre-Auction Price:</strong> <span>R65,000</span></p>
+            <p><strong>Transmission:</strong> Automatic</p>
+            <p><strong>Mileage:</strong> 20 778Km</p>
+            <p><strong>Lot No:</strong> 187003</p>
+            <a href="suzallgrip.html" style="text-decoration: none;">
+                <button style="padding: 10px; background-color: gold; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer;">
+                    View More Details
+                </button>
+            </a>            
+        </div>
+    </div>
+
+    <!-- Modal for full-screen image view -->
+    <div id="carModal" class="modal">
+        <div class="modal-navigation">
+            <button class="modal-nav-button prev-modal">❮</button>
+            <img class="modal-content" id="modalImg" src="">
+            <button class="modal-nav-button next-modal">❯</button>
+        </div>
+    </div>
+
+    <div class="car-list">
+        <div class="car-item">
+            <a href="https://vanzylliquidations.co.za/amarok-details.html">
+            <img src="image/cars/amarok1.jpeg" alt="Car 1">
+        </a>
+            <div class="car-details">
+                <h3 class="car-name">2019 VW Amarok 3.0 V6 TDI Double Cab</h3>
+                <p class="car-price"><i class="fas fa-dollar-sign"></i> Pre-Auction: R205,000</p>
+                <p class="car-transmission"><i class="fas fa-cogs"></i> Automatic</p>
+                <p class="car-mileage"><i class="fas fa-tachometer-alt"></i> 65 967Km</p>
+                <p class="car-lotno">Lot No: 102006</p>
+                <a href="https://vanzylliquidations.co.za/amarok-details.html" class="btn-view">View Car Details</a>
+            </div>
+        </div>
+        <div class="car-item">
+            <a href="https://vanzylliquidations.co.za/ford-ranger.html">
+            <img src="image/cars/ford-ranger1.jpeg" alt="Car 2">
+        </a>
+        <div class="car-details">
+            <h3 class="car-name">2023 Ford Ranger 2.0 Sit Double Cab XLT 4x4</h3>
+            <p class="car-price"><i class="fas fa-dollar-sign"></i> Pre-Auction: R240,000</p>
+            <p class="car-transmission"><i class="fas fa-cogs"></i> Automatic</p>
+            <p class="car-mileage"><i class="fas fa-tachometer-alt"></i> 28 252Km</p>
+            <p class="car-lotno">Lot No: 100927</p>
+            <a href="https://vanzylliquidations.co.za/ford-ranger.html" class="btn-view">View Car Details</a>
+        </div>
+    </div>
+        <div class="car-item">
+            <a href="https://vanzylliquidations.co.za/polo-hatch.html">
+            <img src="image/cars/polo1.jpeg" alt="Car 3">
+        </a>
+            <div class="car-details">
+                <h3 class="car-name">2020 Volkswagen Polo Hatch 1.0TSI Trendline</h3>
+                <p class="car-price"><i class="fas fa-dollar-sign"></i> Pre-Auction: R80,000</p>
+                <p class="car-transmission"><i class="fas fa-cogs"></i> Automatic</p>
+                <p class="car-mileage"><i class="fas fa-tachometer-alt"></i> 60 000Km</p>
+                <p class="car-lotno">Lot No: 34567</p>
+                <a href="https://vanzylliquidations.co.za/polo-hatch.html" class="btn-view">View Car Details</a>
+            </div>
+        </div>
+        <div class="car-item">
+            <a href="https://vanzylliquidations.co.za/tucson.html">
+            <img src="image/cars/tucson1.jpeg" alt="Car 4">
+        </a>
+            <div class="car-details">
+                <h3 class="car-name">2022 Hyundai Tucson 2.0D Elite</h3>
+                <p class="car-price"><i class="fas fa-dollar-sign"></i> Pre-Auction: R88,999.99</p>
+                <p class="car-transmission"><i class="fas fa-cogs"></i> Automatic</p>
+                <p class="car-mileage"><i class="fas fa-tachometer-alt"></i> 37 000Km</p>
+                <p class="car-lotno">Lot No: 159000</p>
+                <a href="https://vanzylliquidations.co.za/tucson.html" class="btn-view">View Car Details</a>
+            </div>
+        </div>
+    </div><br>
+
+    <div class="car-list">
+        <div class="car-item">
+            <a href="https://vanzylliquidations.co.za/benz.html">
+            <img src="image/cars/benz1.jpeg" alt="Car 1">
+        </a>
+            <div class="car-details">
+                <h3 class="car-name">2016 Mercedes-Benz CLA200 AMG Line Auto</h3>
+                <p class="car-price"><i class="fas fa-dollar-sign"></i> Pre-Auction: R88,000</p>
+                <p class="car-transmission"><i class="fas fa-cogs"></i> Automatic</p>
+                <p class="car-mileage"><i class="fas fa-tachometer-alt"></i> 101 730Km</p>
+                <p class="car-lotno">Lot No: 609144</p>
+                <a href="https://vanzylliquidations.co.za/benz.html" class="btn-view">View Car Details</a>
+            </div>
+        </div>
+        <div class="car-item">
+            <a href="https://vanzylliquidations.co.za/ford-eco.html">
+            <img src="image/cars/ford-eco1.jpeg" alt="Car 2">
+        </a>
+        <div class="car-details">
+            <h3 class="car-name">2022 Ford EcoSport 1.5T Titanium Auto</h3>
+            <p class="car-price"><i class="fas fa-dollar-sign"></i> Pre-Auction: R65,000</p>
+            <p class="car-transmission"><i class="fas fa-cogs"></i> Manual</p>
+            <p class="car-mileage"><i class="fas fa-tachometer-alt"></i> 24 500Km</p>
+            <p class="car-lotno">Lot No: 821766</p>
+            <a href="https://vanzylliquidations.co.za/ford-eco.html" class="btn-view">View Car Details</a>
+        </div>
+    </div>
+        <div class="car-item">
+            <a href="https://vanzylliquidations.co.za/land-cruiser.html">
+            <img src="image/cars/land-cruiser1.jpeg" alt="Car 3">
+        </a>
+            <div class="car-details">
+                <h3 class="car-name">2019 Toyota Land Cruiser 79 4.0 V6 Double Cab</h3>
+                <p class="car-price"><i class="fas fa-dollar-sign"></i> Pre-Auction: R420,000</p>
+                <p class="car-transmission"><i class="fas fa-cogs"></i> Manual</p>
+                <p class="car-mileage"><i class="fas fa-tachometer-alt"></i> 59 270Km</p>
+                <p class="car-lotno">Lot No: 100831</p>
+                <a href="https://vanzylliquidations.co.za/land-cruiser.html" class="btn-view">View Car Details</a>
+            </div>
+        </div>
+        <div class="car-item">
+            <a href="https://vanzylliquidations.co.za/suzuki-glx.html">
+            <img src="image/cars/suzglx1.jpeg" alt="Car 4">
+        </a>
+            <div class="car-details">
+                <h3 class="car-name">2022 Suzuki Jimny 1.5 GLX AllGrip</h3>
+                <p class="car-price"><i class="fas fa-dollar-sign"></i> Pre-Auction: R65 000</p>
+                <p class="car-transmission"><i class="fas fa-cogs"></i> Automatic</p>
+                <p class="car-mileage"><i class="fas fa-tachometer-alt"></i> 33 000Km</p>
+                <p class="car-lotno">Lot No: 103025</p>
+                <a href="https://vanzylliquidations.co.za/suzuki-glx.html" class="btn-view">View Car Details</a>
+            </div>
+        </div>
+    </div><br>
+    
+
+    <div class="banner-container">
+        <img src="image/banner.jpg" alt="Banner Image" class="responsive-banner">
+        <div class="banner-text">
+            <h2>Van Zyl Liquidations</h2>
+            <p>Your Trusted Auctioneers</p>
+        </div>
+    </div>        
+    
+
+    <div class="center-text-box">
+        <h2 class="button-style">Contact Us Today!</h2>
+    </div>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="https://wa.me/27833765712?text=Hello%2C%20I%20would%20like%20to%20inquire%20about..." method="get" target="_blank">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li><strong>Address:</strong> 22 Abattor Road, Worcester, Western Cape</li>
+                    <li><strong>Tel:</strong> 021 516 0139</li>
+                    <li><strong>Email:</strong> sales@vanzylliquidations.co.za</li>
+                </ul>
+                <h3>Find Us On The Map</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3343.5225771026658!2d19.469572075698654!3d-33.633944973317405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcd78acdd3c580b%3A0x3e85a66894beecd0!2s22%20Abattoir%20St%2C%20Worcester%2C%206849%2C%20South%20Africa!5e1!3m2!1sen!2som!4v1740663584372!5m2!1sen!2som" width="280" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="center-text-box">
+        <h2 class="button-style">SA #1 Auctioneers</h2>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <a href="https://vanzylliquidations.co.za/">
+                    <img src="image/van-logo2.PNG" alt="Your Logo">
+                </a>
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="https://vanzylliquidations.co.za/">Home</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/cars.html">Cars on Auction</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/faq.html">FAQs</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/contact.html">Contact</a></li>
+                    <li><a href="https://vanzylliquidations.co.za/register.html">Register</a></li>
+                </ul>
+            </div>
+    
+            <!-- Newsletter Section -->
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="your_newsletter_submission_url" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="footer-copyright">
+            <p>&copy; 2025 Van Zyl Liquidations. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- External Scripts -->
+    <script src="js/script.js"></script>
+    <script>
+        // Carousel functionality
+        const carouselContainer = document.querySelector('.carousel-container');
+        const carouselImages = document.querySelector('.carousel-images');
+        const images = document.querySelectorAll('.carousel-image');
+        const totalImages = images.length;
+        let currentIndex = 0;
+
+        // Automatic sliding
+        function slideImages() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+        setInterval(slideImages, 3000);
+
+        // Modal functionality
+        const modal = document.getElementById('carModal');
+        const modalImg = document.getElementById('modalImg');
+        const prevModal = document.querySelector('.prev-modal');
+        const nextModal = document.querySelector('.next-modal');
+
+        // Open modal on image click
+        images.forEach((image, index) => {
+            image.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                modalImg.src = image.src;
+                currentIndex = index;
+            });
+        });
+
+        // Close modal when clicking outside of the image
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Modal navigation
+        prevModal.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            modalImg.src = images[currentIndex].src;
+        });
+
+        nextModal.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalImages;
+            modalImg.src = images[currentIndex].src;
+        });
+    </script>
+
+    <a href="https://wa.me/27833765712" target="_blank" id="whatsapp-button">
+        <img src="image/whatsapp.png" alt="WhatsApp" />
+    </a>
+    
+</body>
+</html>

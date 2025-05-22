@@ -825,3 +825,31 @@ button:hover {
         margin: 20px;
     }
 }
+
+/* Floating Widget */
+.floating-widget {
+    position: fixed;
+    right: 10px;
+    /* Adjust for left-side placement: left: 10px; */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    /* Adjust size */
+    height: auto;
+    z-index: 1000;
+    /* Ensure it stays on top */
+    transition: transform 0.3s ease, opacity 0.3s;
+}
+
+.floating-widget img {
+    width: 100%;
+    border-radius: 10px;
+    /* Optional: Adds smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-widget:hover {
+    transform: translateY(-50%) scale(1.1);
+    /* Slight zoom effect */
+    opacity: 0.9;
+}

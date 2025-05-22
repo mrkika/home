@@ -130,11 +130,12 @@ section {
 .contact form {
     background: #fff;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     max-width: 600px;
     margin: 0 auto;
     text-align: left;
+    transition: all 0.3s ease;
 }
 
 .contact form .form-group {
@@ -144,13 +145,13 @@ section {
 .contact form input,
 .contact form textarea {
     width: 100%;
-    padding: 6px;
+    padding: 12px 14px;
     border-radius: 8px;
     border: 1px solid #ddd;
     font-size: 1rem;
     background-color: #f9f9f9;
     color: #333;
-    transition: border 0.3s ease, background-color 0.3s ease;
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.2s ease;
 }
 
 .contact form input:focus,
@@ -158,10 +159,12 @@ section {
     outline: none;
     border-color: #e67e22;
     background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.15);
 }
 
 .contact form textarea {
     resize: vertical;
+    min-height: 120px;
 }
 
 .contact form button {
@@ -169,15 +172,21 @@ section {
     color: white;
     padding: 15px 30px;
     font-size: 1.1rem;
+    font-weight: bold;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.1s ease;
     width: 100%;
 }
 
 .contact form button:hover {
     background-color: #d35400;
+    transform: translateY(-1px);
+    }
+    
+    .contact form button:active {
+        transform: scale(0.98);
 }
 
 /* Responsive Design for Form */
@@ -185,10 +194,9 @@ section {
     .contact form {
         padding: 20px;
     }
-    
+
     .contact form button {
-        width: auto;
-        padding: 12px 30px;
+        width: 100%;
     }
 }
 
@@ -258,4 +266,23 @@ footer p {
         justify-content: center;
         gap: 15px;
     }
+}
+/* Vertical image widget */
+.image-widget {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.image-widget img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.image-widget a {
+    text-decoration: none;
 }

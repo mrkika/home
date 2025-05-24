@@ -1,0 +1,377 @@
+/* BILLS PAGE STYLING */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f9ff;
+  color: #000000;
+}
+
+.bills-hero {
+  background: linear-gradient(rgba(0, 135, 83), rgba(214, 40, 40, 0.85)),
+              url('images/legislate.png') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.bills-hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.bills-hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.bills-list {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.bill-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.bill-card:hover {
+  transform: translateY(-6px);
+}
+
+.bill-card h3 {
+  color: #008753; /* APC Green */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.bill-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .bills-hero h1 {
+    font-size: 32px;
+  }
+
+  .bill-card {
+    padding: 20px;
+  }
+}
+
+/* TOP HEADER */
+.top-header {
+  background-color: #d62828;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 50px;
+}
+
+.logo h1 a {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Stylish Home Button */
+.home-btn {
+  background: #008753;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  align-items: center;
+}
+
+.home-btn:hover {
+  background: rgb(214, 40, 40);
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* VOLUNTEER SECTION */
+.volunteer {
+  background: #e5f2ff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.volunteer h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.volunteer p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #008753;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #d62828;
+}
+
+/* CONTACT FORM */
+.contact {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 90%;
+}
+
+/* Make bill cards clickable */
+.bill-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-footer {
+  background: #002b18;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+.site-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+
+
+.blog-post {
+  background-color: #fdfdfd;
+  padding: 60px 20px;
+  animation: fadeInUp 1s ease-out both;
+}
+
+.blog-post .container {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #fff;
+  border-left: 5px solid #008753;
+  border-radius: 10px;
+  padding: 50px 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.featured-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+  color: #008753;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  animation: slideInLeft 0.6s ease-out both;
+}
+
+.post-meta {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.post-content p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.post-content .section-heading {
+  font-size: 1.5rem;
+  color: #008753;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  background: #f1f1f1;
+  border-left: 5px solid #d62828;
+  padding: 20px;
+  margin: 30px 0;
+  font-style: italic;
+  color: #444;
+  border-radius: 5px;
+}
+
+.highlight-quote {
+  background-color: #008753;
+  color: #fff;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  transition: background 0.3s ease;
+}
+
+.highlight-quote:hover {
+  background-color: #b71c1c;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.join-section {
+  background: linear-gradient(135deg, #eaf6ff, #ffffff);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.join-section .section-title {
+  font-size: 36px;
+  color: #007b3e;
+  margin-bottom: 20px;
+}
+
+.join-text {
+  font-size: 18px;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #25d366;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+}
+
+/* Floating Widget */
+.floating-widget {
+  position: fixed;
+  right: 10px;
+  /* Adjust for left-side placement: left: 10px; */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  /* Adjust size */
+  height: auto;
+  z-index: 1000;
+  /* Ensure it stays on top */
+  transition: transform 0.3s ease, opacity 0.3s;
+}
+
+.floating-widget img {
+  width: 100%;
+  border-radius: 10px;
+  /* Optional: Adds smooth corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-widget:hover {
+  transform: translateY(-50%) scale(1.1);
+  /* Slight zoom effect */
+  opacity: 0.9;
+}
